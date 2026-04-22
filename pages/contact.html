@@ -5,23 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVENTURE BAY</title>
     <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <nav>
-        <h1 class="logo">LOGO</h1>
-        <ul class="nav-ul">
-            <li><a href="../index.html">ACCUEIL</a></li>
-            <li><a href="concept.html">Concept</a></li>
-            <li><a href="anniversaire.html">Anniversaire</a></li>
-            <li><a href="jeu.html">Jeu</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <a href="">Trouver notre parc</a>
-    </nav>
+    <header id="header">
+        <div class="head">
+            <img src="../assets/logo.png" class="logo" alt="">
+            <ul class="nav-ul">
+                <li><a href="../index.html" class="ACCUEIL "><i data-lucide="castle" class="castle"></i>ACCUEIL</a></li>
+                <li><a href="concept.html" class="Concept"><i data-lucide="puzzle" class="puzzle"></i> Concept</a></li>
+                <li><a href="anniversaire.html" class="Anniversaire "><i data-lucide="cake" class="cake"></i> Anniversaire</a></li>
+                <li><a href="jeu.html" class="Jeu"><i data-lucide="gamepad-2" class="gamepad"></i>  Jeu</a></li>
+                <li><a href="#" class="Contact active"><i data-lucide="mail" class="mail"></i> Contact</a></li>
+            </ul>
+            <a href="#" class="button-nav">Trouver notre parc</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-con">
+            <h1 class="hero-h1">CONTACT</h1>
+            <h3>Retrouvez-nous et contactez-nous</h3>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <h1>NOUS CONTACTER</h1>
+        <p class="p">Une question ? N'hésitez pas à nous contacter !</p>
+        <div class="container">
+            <div class="img">
+                <img src="../assets-accueil/mascot-standing (1).png" alt="">
+            </div>
+            <div class="contact-section">
+                <form>
+                    <div class="options">
+                        <label for="op">Objet de votre message *</label>
+                        <select id="op" name="op">
+                            <option>Sélectionnez Un Object</option>
+                            <option>Réservation</option>
+                            <option>Anniversaire</option>
+                        </select>
+                    </div>
+                    <div class="nom-prenom">
+                        <div class="nom">
+                            <label for="fname">Votre nom *</label>
+                            <input type="text" id="fname" name="lname" placeholder="NOM">
+                        </div>
+                        <div class="prenom">
+                            <label for="lname">Votre prénom *</label>
+                            <input type="text" id="lname" name="lname" placeholder="PRÉNOM">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email">Votre adresse mail *</label>
+                        <input type="text" id="email" name="email" placeholder="EMAIL@EXAMPLE.COM">
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Votre téléphone *</label>
+                        <input type="text" id="phone" name="phone" placeholder="0123456789">
+                    </div>
+                    <div class="textarea">
+                        <label for="textarea">Message *</label>
+                        <textarea name="textarea" id="textarea" placeholder="Votre Message..."></textarea>
+                    </div>
+                    <div class="fir-condition">
+                        <input type="checkbox" class="checkbox">
+                        <label>Recevoir une copie de ce message *</label>
+                    </div>
+                    <div class="sec-condition">
+                        <input type="checkbox" class="checkbox">
+                        <label>J'accepte la politique de confidentialité *</label>
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn">
+                        <i data-lucide="send"></i> 
+                        <p>Envoyer</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <h2 class="h2">ADVENTURE BAY FAMILY PARK</h2>
+            <h4 class="h4">PARC DE JEUX POUR ENFANTS DE 0 À 12 ANS ET PLUS</h4>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.942714511956!2d-7.592919999999998!3d33.528875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63300491a351b%3A0x4b7d92d183187909!2sAdventure%20Bay%20-%20Family%20Park!5e0!3m2!1sen!2sma!4v1772663510918!5m2!1sen!2sma" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="footer-info">
+                <div class="col-1">
+                    <h2 class="first">COORDONNÉES</h2>
+                    <h3 class="loc"><i class="fa-solid fa-location-dot"></i>ADVENTURE BAY FAMILY PARK - Family Park</h3>
+                    <h4>Angle Bd Tah et Bd 2 Mars</h4>
+                    <h4>Ain Chock, Casablanca</h4>
+                    <h3 class="phone"><i class="fa-solid fa-phone"></i>0665-787077</h3>
+                    <h3 class="email"><i data-lucide="mail" class="mail"></i>sm.adventurebay@gmail.com</h3>
+                </div>
+                <div class="col-2">
+                    <h2 class="first">N'OUBLIEZ</h2>
+                    <div class="col-2-box">
+                        <div class="col-2-box1">
+                            <div class="icon">
+                                <i data-lucide="wifi"></i>
+                            </div>
+                            <h3>Wi-Fi gratuit</h3>
+                        </div>
+                        <div class="col-2-box1">
+                            <div class="icon">
+                                <i data-lucide="thermometer"></i>
+                            </div>
+                            <h3>Zone Climatisée</h3>
+                        </div>
+                        <div class="col-2-box1">
+                            <div class="icon">
+                                <i data-lucide="coffee"></i>
+                            </div>
+                            <h3>Cafétéria</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2 class="first">REJOIGNEZ-NOUS</h2>
+                    <div class="col-3-icons">
+                        <i class="fa-brands fb fa-facebook-f"></i>
+                        <i class="fa-brands insta fa-instagram"></i>
+                        <i class="fa-brands tik fa-tiktok"></i>
+                    </div>
+                    <a href="#">Trouver notre parc<i data-lucide="chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <h3>© 2024 ADVENTURE BAY FAMILY PARK. Tous droits réservés.</h3>
+            <div>
+                <h4>Mentions légales</h4>
+                <h4>Politique de confidentialité</h4>
+                <h4>CGV</h4>
+            </div>
+        </div>
+    </footer>
     
 
 
-    <script src="../index.js"></script>
+
+    <button id="top" class="arrow-top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../JS/contact.js"></script>
 </body>
 </html>
