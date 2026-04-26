@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVENTURE BAY</title>
     <link rel="stylesheet" href="../CSS/jeu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <nav>
-        <h1 class="logo">LOGO</h1>
-        <ul class="nav-ul">
-            <li><a href="../index.html">ACCUEIL</a></li>
-            <li><a href="concept.html">Concept</a></li>
-            <li><a href="anniversaire.html">Anniversaire</a></li>
-            <li><a href="#">Jeu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="">Trouver notre parc</a>
-    </nav>
+
+    <header id="header">
+        <div class="head">
+            <img src="../assets/logo.png" class="logo" alt="">
+            <ul class="nav-ul">
+                <li><a href="../index.html" class="ACCUEIL"><i data-lucide="castle" class="castle"></i>ACCUEIL</a></li>
+                <li><a href="concept.html" class="Concept"><i data-lucide="puzzle" class="puzzle"></i> Concept</a></li>
+                <li><a href="anniversaire.html" class="Anniversaire"><i data-lucide="cake" class="cake"></i> Anniversaire</a></li>
+                <li><a href="#" class="Jeu active"><i data-lucide="gamepad-2" class="gamepad"></i>  Jeu</a></li>
+                <li><a href="contact.html" class="Contact"><i data-lucide="mail" class="mail"></i> Contact</a></li>
+            </ul>
+            <a href="#" class="button-nav">Trouver notre parc</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-con">
+            <h1 class="hero-h1">NOS JEUX</h1>
+            <h3>Découvrez nos activités et amusez-vous</h3>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <div class="head"></div>
+        <div class="jeu"></div>
+    </section>
     
 
 
-    <script src="../index.js"></script>
+
+
+
+
+    <button id="top" class="arrow-top"><i class="fa-solid fa-angle-up"></i></button>
+
+
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../JS/jeu.js"></script>
 </body>
 </html>
