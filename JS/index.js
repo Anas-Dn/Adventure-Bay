@@ -1,4 +1,6 @@
 lucide.createIcons();
+
+
 const video = document.getElementById("bgVideo");
 video.playbackRate = 0.7;
 
@@ -126,4 +128,18 @@ sec5_pause3.addEventListener("click" , () => {
   lucide.createIcons()
 })
 
+// Animation
 
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".animation",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  }
+});
+
+tl.from(".animation", {
+  y: 70,
+  opacity: 0,
+  duration: 1,
+})
