@@ -143,3 +143,13 @@ tl.from(".animation", {
   opacity: 0,
   duration: 1,
 })
+
+
+//loader
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("loader").style.display = "none";
+    
+  }, 2000);
+});
