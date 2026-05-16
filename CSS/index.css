@@ -1332,6 +1332,7 @@ header .button-nav:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .loader img{
     width: 280px;

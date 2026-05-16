@@ -139,7 +139,7 @@ const tl = gsap.timeline({
 });
 
 tl.from(".animation", {
-  y: 70,
+  y: 90,
   opacity: 0,
   duration: 1,
 })
@@ -147,9 +147,19 @@ tl.from(".animation", {
 
 //loader
 
+const navType = performance.getEntriesByType("navigation")[0].type;
+
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("loader").style.display = "none";
-    
-  }, 2000);
+  const loader = document.querySelector(".loader");
+  if(  performance.navigation.type === 1 || !sessionStorage.getItem("loaderShown")){
+      loader.style.display = "flex";
+      sessionStorage.setItem("loaderShown", "true");
+
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 2000);
+    }else{
+      loader.style.display = "none";
+    }
 });
+
