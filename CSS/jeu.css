@@ -257,17 +257,19 @@ header .button-nav:hover{
 }
 .sec-2 .head .input input{
     width: 100%;
-    height: 40px;
-    border-radius: 9px;
+    height: 45px;
+    border-radius: 12px;
     font-size: 18px;
     font-weight: 600;
-    padding-left: 28px;
+    padding-left: 35px;
+    border: 2px solid #ccc;
 }
 .sec-2 .head .input i{
     position: absolute;
-    left: 7px;
-    top: 12px;
+    left: 12px;
+    top: 14px;
     cursor: pointer;
+    color: #ccc;
 }
 
 .sec-2 .head .jeu-name{
@@ -293,8 +295,25 @@ header .button-nav:hover{
     background-color: #155a8a;
     color: white;
 }
+.sec-2 .head input:focus{
+    border:2px solid var(--color-primary-dark);
+    outline: none;
+}
+.sec-2 .head input:focus + i{
+    color: var(--color-primary-dark);
+}
 
 
+/***** jeu card ******/
+
+.jeu{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.jeu-card .img{
+    width: 100px;
+}
 
 
 

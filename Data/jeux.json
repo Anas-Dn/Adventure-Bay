@@ -1,33 +1,64 @@
 [
   {
     "id": 1,
-    "name": "Basket Challenge",
-    "category": "Jeux de sport",
-    "description": "Test your basketball skills.",
-    "image": "assets-concept/concept-1.JPG"
+    "name": "Opération G.H.O.S.t",
+    "category": "Jeux de Tir",
+    "description": "Jeu de tir tactique avec lumineux",
+    "image": "../assets-jeu/jeu1.jpg"
   },
 
   {
     "id": 2,
-    "name": "Laser Shot",
-    "category": "Jeux de tir",
+    "name": "Champion DE Box",
+    "category": "Jeux de Sport",
     "description": "Interactive shooting game.",
-    "image": "../assets-concept/concept-2.JPG"
+    "image": "../assets-jeu/jeu2.jpg"
   },
 
   {
     "id": 3,
-    "name": "Laser Shot",
-    "category": "Jeux de tir",
+    "name": "Course De Voitures Rapides",
+    "category": "Jeux de Course",
     "description": "Interactive shooting game.",
-    "image": "assets-concept/concept-3.JPG"
+    "image": "../assets-jeu/jeu3.jpg"
   },
 
   {
     "id": 4,
+    "name": "Expérience VR",
+    "category": "Expérience Cinéma VR",
+    "description": "Interactive shooting game.",
+    "image": "../assets-jeu/jeu4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Basket Challenge",
+    "category": "Jeux de sport",
+    "description": "Test your basketball skills.",
+    "image": "../assets-jeu/jeu5.jpg"
+  },
+
+  {
+    "id": 6,
     "name": "Laser Shot",
     "category": "Jeux de tir",
     "description": "Interactive shooting game.",
-    "image": "assets-concept/home-1.JPG"
+    "image": "../assets-jeu/jeu6.jpg"
+  },
+
+  {
+    "id": 7,
+    "name": "Laser Shot",
+    "category": "Jeux de tir",
+    "description": "Interactive shooting game.",
+    "image": "../assets-jeu/jeu7.jpg"
+  },
+
+  {
+    "id": 8,
+    "name": "Laser Shot",
+    "category": "Jeux de tir",
+    "description": "Interactive shooting game.",
+    "image": "../assets-jeu/jeu8.jpg"
   }
 ]

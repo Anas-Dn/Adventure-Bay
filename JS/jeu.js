@@ -30,7 +30,7 @@ document.getElementById("top").addEventListener("click" ,() => {
 
 //jeu
 
-/*const jeuxHT = document.getElementById("jeu");
+const jeuxHT = document.getElementById("jeu");
 
 fetch("../Data/jeux.json")
 .then((response) => response.json())
@@ -42,7 +42,7 @@ fetch("../Data/jeux.json")
       
         <div class="jeu-card">
           <div class="image">
-            <img src="${jeu.image}" alt="${jeu.name}" loading="lazy">
+            <img class="img" src="${jeu.image}" alt="${jeu.name}" loading="lazy">
             <span class="category"> ${jeu.category} </span>
             <i class="fa-solid fa-angle-right arrow"></i>
           </div>
@@ -60,4 +60,4 @@ fetch("../Data/jeux.json")
 
   .catch((error) => {
     console.log("Error loading JSON:", error);
-  }); */
+  }); 

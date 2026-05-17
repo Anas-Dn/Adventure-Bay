@@ -128,22 +128,6 @@ sec5_pause3.addEventListener("click" , () => {
   lucide.createIcons()
 })
 
-// Animation
-
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".animation",
-    start: "top 80%",
-    toggleActions: "play none none none",
-  }
-});
-
-tl.from(".animation", {
-  y: 90,
-  opacity: 0,
-  duration: 1,
-})
-
 
 //loader
 
@@ -162,4 +146,22 @@ window.addEventListener("load", () => {
       loader.style.display = "none";
     }
 });
+
+
+
+// Animation
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".animation",
+    start: "top 80%",
+    toggleActions: "play none none none",
+  }
+});
+
+tl.from(".animation", {
+  y: 40,
+  opacity: 0,
+  duration: 1,
+})
 
