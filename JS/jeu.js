@@ -44,12 +44,20 @@ fetch("../Data/jeux.json")
           <div class="image">
             <img class="img" src="${jeu.image}" alt="${jeu.name}" loading="lazy">
             <span class="category"> ${jeu.category} </span>
-            <i class="fa-solid fa-angle-right arrow"></i>
+            <div class="i">
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </div>
           </div>
 
           <div class="content">
             <h3>${jeu.name}</h3>
-            <p>${jeu.description}</p>
+            <p class="desc">${jeu.description}</p>
+            <div class="bt">
+              <p>EN SAVOIR PLUS</p>
+              <div class="ii">
+                <i class="fa-solid fa-angle-right arrow"></i>
+              </div>
+            </div>
           </div>
 
         </div>

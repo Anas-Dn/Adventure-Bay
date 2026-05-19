@@ -248,7 +248,7 @@ header .button-nav:hover{
 .sec-2 .head {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
 }
 .sec-2 .head .input{
     flex-basis: 29%;
@@ -285,11 +285,16 @@ header .button-nav:hover{
     gap: 10px;
     cursor: pointer;
     padding: 12px 14px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 .sec-2 .head .jeu-name .name p{
     font-size: 18px;
     font-weight: 600;
+}
+.sec-2 .head .jeu-name .br:has(.active){
+    border: 2px solid var(--color-primary);
+    padding: 2px;
+    border-radius: 15px;
 }
 .sec-2 .head .jeu-name .active{
     background-color: #155a8a;
@@ -307,22 +312,113 @@ header .button-nav:hover{
 /***** jeu card ******/
 
 .jeu{
-    margin-top: 70px;
+    margin-top: 90px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+.jeu-card{
+    width: 300px;
+    margin-bottom: 50px;
+}
+.jeu-card .image{
+    position: relative;
+    overflow: hidden;
+}
+.jeu-card .image .category{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: #fff;
+    color: var(--color-primary);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.jeu-card .category p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jeu-card .image .i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color: var(--color-primary);
+    padding: 16px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);    
+    transition:transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in;
+    cursor: pointer;
+} 
 .jeu-card .img{
-    width: 100px;
+    display: block;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    cursor: pointer;
+    transition: opacity all 0.5s , transform ease-in-out 0.3s;
+}
+.jeu-card .image:hover .i{
+    opacity: 1;
 }
 
 
-
-
-
-
-
-
-
+.jeu-card .content{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    padding:15px 25px;
+    height: 180px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.jeu-card .content h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.jeu-card .content .desc{
+    color: #888;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.jeu-card .content .bt{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.jeu-card .content .bt p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111a2;
+}
+.jeu-card .content .bt .ii{
+    background-color: #42a4f52e;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jeu-card .content .bt .ii .arrow{
+    color: var(--color-primary);
+    font-size: 13px;
+}
+.jeu-card .image:hover + .content {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.jeu-card .image:hover + .content .ii{
+    background-color: var(--color-primary);
+    color:  #42a4f52e;
+}
+.jeu-card .image:hover + .content .arrow{
+    color:  #42a4f5;
+}
 
 
 

@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Champion DE Box",
     "category": "Jeux de Sport",
-    "description": "Interactive shooting game.",
+    "description": "Testez Votre Force De Frappe Sur Cette Machine De Boxe Classique",
     "image": "../assets-jeu/jeu2.jpg"
   },
 
@@ -19,14 +19,14 @@
     "id": 3,
     "name": "Course De Voitures Rapides",
     "category": "Jeux de Course",
-    "description": "Interactive shooting game.",
+    "description": "Simulateurs De Course Doubles Avec Volants",
     "image": "../assets-jeu/jeu3.jpg"
   },
 
   {
     "id": 4,
-    "name": "Expérience VR",
-    "category": "Expérience Cinéma VR",
+    "name": "Expérience Cinéma VR",
+    "category": "Expérience VR",
     "description": "Interactive shooting game.",
     "image": "../assets-jeu/jeu4.jpg"
   },
