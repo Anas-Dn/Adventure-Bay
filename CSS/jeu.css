@@ -417,7 +417,7 @@ header .button-nav:hover{
     color:  #42a4f52e;
 }
 .jeu-card .image:hover + .content .arrow{
-    color:  #42a4f5;
+    color: #fff !important;
 }
 
 

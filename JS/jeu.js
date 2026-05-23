@@ -64,8 +64,34 @@ fetch("../Data/jeux.json")
       `;
     });
 
+    // search bar
+
+
+    const search = document.getElementById('inp')
+    const cards = document.querySelectorAll(".jeu-card")
+
+
+    search.addEventListener('input', () => {
+        const inputValue = search.value.toLowerCase();
+        cards.forEach((card) => {
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          if(title.includes(inputValue)){
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        })
+        })
+
   })
 
   .catch((error) => {
     console.log("Error loading JSON:", error);
   }); 
+
+
+
+
+
+
+
