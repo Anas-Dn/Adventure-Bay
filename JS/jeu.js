@@ -40,7 +40,7 @@ fetch("../Data/jeux.json")
 
       jeuxHT.innerHTML += `
       
-        <div class="jeu-card">
+        <div class="jeu-card" data-category="${jeu.category}">
           <div class="image">
             <img class="img" src="${jeu.image}" alt="${jeu.name}" loading="lazy">
             <span class="category"> ${jeu.category} </span>
@@ -81,13 +81,39 @@ fetch("../Data/jeux.json")
             card.style.display = "none";
           }
         })
-        })
+    })
+
+
+    // Filter Cards
+
+    const names = document.querySelectorAll(".name")
+    const all_jeu = document.querySelectorAll(".jeu-card")
+
+    names.forEach((n) => {
+      n.addEventListener("click" , () => {
+        names.forEach((n) => n.classList.remove("active"))
+        n.classList.add("active");
+
+    const category = n.dataset.category.toLowerCase();
+        all_jeu.forEach((jeu) => {
+      if(category == 'tous'){
+        all_jeu.forEach((j) => j.style.display = "block")
+      }
+      else if(category === jeu.dataset.category.toLowerCase()){
+        jeu.style.display = "block"
+      }else{
+        jeu.style.display = "none"
+      }
+    })
+  })
+})
 
   })
 
   .catch((error) => {
-    console.log("Error loading JSON:", error);
+    console.log(error);
   }); 
+
 
 
 
