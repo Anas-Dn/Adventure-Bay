@@ -136,32 +136,42 @@ const navType = performance.getEntriesByType("navigation")[0].type;
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
   if(  performance.navigation.type === 1 || !sessionStorage.getItem("loaderShown")){
-      loader.style.display = "flex";
-      sessionStorage.setItem("loaderShown", "true");
+      loader.style.display = "fle";////////
+      sessionStorage.setItem("loaderShown", "tru");/////////
 
       setTimeout(() => {
         loader.style.display = "none";
       }, 2000);
     }else{
-      loader.style.display = "none";
+      loader.style.display = "non";////////////
     }
 });
 
 
 
-// Animation
+//menu
 
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".animation",
-    start: "top 80%",
-    toggleActions: "play none none none",
-  }
-});
+const menu = document.getElementById("menu-header");
+const close_header = document.getElementById("close-header");
+const menu_nav = document.getElementById("menu-nav");
 
-tl.from(".animation", {
-  y: 40,
-  opacity: 0,
-  duration: 1,
+menu.addEventListener("click" , () => {
+
+    menu.style.setProperty('display', 'none', 'important');
+    close_header.style.setProperty('display', 'block', 'important');
+    menu_nav.classList.add('menu-show');
+    if(window.scrollY > 15 ){
+    document.getElementById("header").classList.remove('scrolled-header')
+    }
+})
+
+close_header.addEventListener("click" , () => {
+
+    menu.style.setProperty('display', 'block', 'important');
+    close_header.style.setProperty('display', 'none', 'important');
+    menu_nav.classList.remove('menu-show');
+    if(window.scrollY > 15 ){
+    document.getElementById("header").classList.add('scrolled-header')
+    }
 })
 

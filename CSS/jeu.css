@@ -70,6 +70,15 @@ header .head{
     justify-content: space-between;
     align-items: center;
 }
+header .head .menu-header , .close-header{
+    display: none !important;
+}
+header .head .dd{
+    display: none;
+}
+header .head .dd:hover{
+    background-color: #8984846c;
+}
 header .logo{
     width: 220px;
     cursor: pointer;
@@ -632,6 +641,130 @@ header .button-nav:hover{
 }
 
 
+
+
+
+
+/********************************************************* Menu ***************************************************/
+
+
+
+
+
+.menu{
+    position:fixed;
+    top: -398px;
+    /*top: 112px;*/
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding:3.5rem 2rem;
+    z-index: 99999;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out , top 0.3s ease-in-out;
+}
+.menu-show{
+    top: 112px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+.menu .nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.menu .nav-ul li{
+    width: 100% ;
+}
+.menu .nav-ul li a{
+    padding: 13px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: black !important;
+}
+.menu .nav-ul li .castle{
+    transform: translate(-5px, 0px);
+    width: 22px;
+}
+.menu .nav-ul li .ACCUEIL{
+    color: var(--color-ui-green);
+    width: 100% !important;
+}
+.menu .nav-ul li .ACCUEIL:hover{
+    background-color: #6461612c;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.menu .nav-ul li .puzzle{
+    transform: translate(-2px, 0px);
+    width: 22px;
+}
+.menu .nav-ul li .Concept:hover{
+    background-color: #6461612c;
+    transition: 0.5s ease;
+}
+.menu .nav-ul li .cake{
+    transform: translate(-2px, 0px);
+    width: 22px;
+}
+.menu .nav-ul li .Anniversaire:hover{
+    background-color: #6461612c;
+    transition: 0.5s ease;
+}
+.menu .nav-ul li .gamepad{
+    transform: translate(-2px, 0px);
+    width: 22px;
+}
+.menu .nav-ul li .Jeu:hover{
+    transition: 0.5s ease;
+}
+.menu .nav-ul li .mail{
+    transform: translate(-2px, 0px);
+    width: 22px;
+}
+.menu .nav-ul li .Contact:hover{
+    background-color: #6461612c;
+    transition: 0.5s ease;
+}
+.menu .nav-ul li .active{
+    color: #fff !important;
+    background-color: var(--color-ui-red);
+}
+.menu .button-nav{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--color-primary);
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+.menu .button-nav:hover{
+    background-color: var(--color-primary-dark);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
 /********************************************************* End ***************************************************/
 
 
@@ -657,3 +790,40 @@ header .button-nav:hover{
 
 
 
+
+
+/********************************************************* Layouts ***************************************************/
+
+
+
+
+@media(max-width: 1200px){
+    header .head .menu-header{
+        display: block !important;
+    }
+    header .head ul{
+        display: none;
+    }
+    header .head .button-nav{
+        display: none;
+    }
+    header .head .dd{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    }
+    header .head .menu-header , .close-header{
+    font-size: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .menu{
+        display: flex;
+    }
+}

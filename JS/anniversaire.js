@@ -66,3 +66,32 @@ prev.addEventListener("click" , () => {
 const ShowImg = () => {
     img.src = pics[currentIndex].src ;
 }
+
+
+
+
+//menu
+
+const menu = document.getElementById("menu-header");
+const close_header = document.getElementById("close-header");
+const menu_nav = document.getElementById("menu-nav");
+
+menu.addEventListener("click" , () => {
+
+    menu.style.setProperty('display', 'none', 'important');
+    close_header.style.setProperty('display', 'block', 'important');
+    menu_nav.classList.add('menu-show');
+    if(window.scrollY > 15 ){
+    document.getElementById("header").classList.remove('scrolled-header')
+    }
+})
+
+close_header.addEventListener("click" , () => {
+
+    menu.style.setProperty('display', 'block', 'important');
+    close_header.style.setProperty('display', 'none', 'important');
+    menu_nav.classList.remove('menu-show');
+    if(window.scrollY > 15 ){
+    document.getElementById("header").classList.add('scrolled-header')
+    }
+})
