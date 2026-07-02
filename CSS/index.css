@@ -813,6 +813,11 @@ header .button-nav:hover{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.section-4 .sec-4-container .con-2 #img-1{
+    width: 48%;
+    height: 288.2px;
+    object-fit: cover;
+}
 .section-4 .sec-4-container .con-2 #img-2{
     display: none;
 }
@@ -1563,6 +1568,110 @@ header .button-nav:hover{
     }
     .menu{
         display: flex;
+    }
+    .img-hi-hero img{
+    width: 260px;
+    }
+    #sec-5{
+    padding: 6rem 12rem;
+    }
+}
+
+@media(max-width: 1000px){
+    #section-3 .sec-3{
+    flex-direction: column;
+    }
+    #section-3 .sec-3 .sec-3-img{
+        width: 100%;
+    }
+    .section-4 .sec-4-container{
+    margin: 5rem 0;
+    }
+    #sec-5{
+    padding: 6rem 7rem;
+    }
+    .sec-6{
+    padding: 5rem 6rem;
+    }
+    .sec-6 .cont .side-2 h1{
+        font-size: 40px;
+    }
+    .sec-6 .cont .side-2 h2{
+        font-size: 23px;
+    }
+    .sec-6 .cont .side-2 .box-1 h1{
+        font-size: 21px;
+    }
+    .sec-6 .cont .side-2 .box-1 p{
+        font-size: 16px;
+    }
+    .sec-6 .cont .pics img{
+    width: 235px;
+    }
+}
+
+@media(max-width: 900px){
+    .hero-section .bottom-hero{
+        flex-direction: column;
+        top: 79%;
+        gap: 20px;
+    }
+    .hero-section .bottom-hero .first-side{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-section .bottom-hero .first-side h1{
+        font-size: 33px;
+    }
+    .img-hi-hero img{
+    width: 200px;
+    }
+    .hero-section .middle-hero h1{
+        font-size: 60px;
+    }
+    .big-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+    #section-2{
+    padding: 80px 13rem;
+    }
+   .sec-6 .cont{
+    flex-direction: column;
+    gap: 40px;
+    }
+    .sec-6{
+    padding: 5rem 7rem;
+    }
+}
+
+@media(max-width: 800px){
+    .section-4 .sec-4-container{
+    flex-direction: column;
+    margin: 3rem 0;
+    gap: 20px;
+    }
+    .section-4 .sec-4-h1{
+    font-size: 30px;
+    }
+    .section-4 .sec-4-container .con-2 {
+    flex-basis: 0%;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .section-4 .sec-4-container .con-2 img{
+    width: 35%;
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%,0%);
+    }
+    #sec-5{
+    padding: 6rem 4rem;
     }
 }
 
