@@ -1675,3 +1675,80 @@ header .button-nav:hover{
     }
 }
 
+
+
+
+/********************************************************* Layouts For Footer ******************************************/
+
+
+
+@media(max-width: 1200px){
+    .footer-top{
+    padding: 0 5rem;
+    }
+    .footer  .copyright{
+    padding: 0 5rem 1rem;
+    }
+    .footer-map{
+        height: 560px;
+    }
+}
+
+@media(max-width: 850px){
+    .footer-top{
+    padding: 0 7rem;
+    }
+    .footer  .copyright{
+    padding: 0 7rem 1rem;
+    }
+    .footer-map {
+    margin: 40px 0 15px 0;
+    }
+    .footer .footer-info{
+    flex-direction: column;
+    gap: 40px;
+    }
+    .footer-map{
+        height: 450px;
+    }
+}
+
+@media(max-width: 800px){
+    .footer  .copyright{
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .footer-top{
+    padding: 0 4rem;
+    }
+    .footer  .copyright{
+    padding: 0 4rem 1rem;
+    }
+    .footer-map{
+        height: 400px;
+    }
+}
+
+@media(max-width: 600px){
+    .footer-top{
+    padding: 0 2rem;
+    }
+    .footer  .copyright{
+    padding: 0 2rem 1rem;
+    }
+    .footer-map{
+        height: 350px;
+    }
+}
+@media(max-width: 450px){
+    .footer-top{
+    padding: 0 1rem;
+    }
+    .footer  .copyright{
+    padding: 0 1rem 1rem;
+    }
+    .footer-map{
+        height: 350px;
+    }
+}
