@@ -974,6 +974,58 @@ header .button-nav:hover{
 }
 
 
+@media(max-width: 500px){
+    .menu-show{
+        top: 97px !important;
+    }
+}
+
+
+
+/********************************************************* Layouts For Header ******************************************/
+
+
+
+@media(max-width: 800px){
+    header {
+        padding: 16px 5rem;
+    }
+    .scrolled-header{
+        padding: 16px 4rem;
+    }
+}
+
+@media(max-width: 700px){
+    header {
+        padding: 16px 3rem;
+    }
+    .scrolled-header{
+        padding: 16px 3rem;
+    }
+}
+
+@media(max-width: 500px){
+    header .logo{
+        width: 180px;
+    }
+    header {
+        padding: 16px 2rem;
+    }
+    .scrolled-header{
+        padding: 16px 2rem;
+    }
+    .scrolled-header .logo{
+        width: 150px;
+    }
+    .scrolled-header .head{
+        padding: 7px 30px;
+    }
+}
+
+
+
+
+
 
 
 

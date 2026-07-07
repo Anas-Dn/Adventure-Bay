@@ -1627,6 +1627,9 @@ header .button-nav:hover{
     .img-hi-hero img{
     width: 200px;
     }
+    .hero-section .middle-hero{
+        width: 550px;
+    }
     .hero-section .middle-hero h1{
         font-size: 60px;
     }
@@ -1671,14 +1674,186 @@ header .button-nav:hover{
     transform: translate(0%,0%);
     }
     #sec-5{
-    padding: 6rem 4rem;
+    padding: 6rem 10rem;
+    }
+    #sec-5 .all-vid{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img-hi-hero img{
+        bottom: 88px;
+    }
+    #section-2{
+        padding: 80px 7rem;
+    }
+}
+
+@media(max-width: 700px){
+    #section-3{
+        padding: 3rem 5rem ;
+    }
+    .section-4{
+        padding: 4rem 5rem;
+    }
+    #sec-5{
+    padding: 6rem 8rem;
+    }
+    .sec-6{
+        padding: 5rem 6rem;
+    }
+}
+
+@media(max-width: 600px){
+    .img-hi-hero img{
+        width: 160px;
+    }
+    .hero-section .middle-hero h1{
+        font-size: 54px;
+    }
+    .hero-section .middle-hero h4{
+        font-size: 20px;
+    }
+    .hero-section .middle-hero a{
+        font-size: 18px;
+    }
+    .hero-section .bottom-hero .first-side h1{
+        font-size: 27px;
+    }
+    #section-2{
+        padding: 80px 5rem;
+    }
+    #section-2 .section-2-h1{
+        font-size: 45px;
+    }
+    #section-2 .section-2-h4{
+        font-size: 22px;
+    }
+    #section-3{
+        padding: 3rem 3rem ;
+    }
+    #section-3 .ram-ar{
+        font-size: 19px;
+    }
+    #section-3 .sec-3-p{
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+    #section-3 .h1 h1{
+        font-size: 35px;
+    }
+    #section-3 .h1 svg{
+        width: 40px;
+        height: 40px;
+    }
+    #section-3 .sec-3{
+        margin-top: 50px;
+    }
+    .section-4{
+        padding: 4rem 3rem;
+    }
+    .section-4 .sec-4-h1{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .section-4 .sec-4-container .con-1 h2{
+        font-size: 24px;
+    }
+    #sec-5{
+    padding: 6rem 5rem;
+    }
+    #sec-5 .h1 {
+        font-size: 30px;
+    }
+    #sec-5 .p-5 {
+        font-size: 16px;
+    }
+    .sec-6{
+        padding: 5rem 3rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width: 500px){
+    #section-2{
+        padding: 80px 3rem;
+    }
+    #section-2 .section-2-h1{
+        font-size: 38px;
+    }
+    #section-2 .section-2-h4{
+        font-size: 17px;
+    }
+    #section-3{
+        padding: 3rem 2rem ;
+    }
+    .section-4{
+        padding: 4rem 2rem;
+    }
+    #sec-5{
+    padding: 6rem 3rem;
+    }
+    .sec-6{
+        padding: 5rem 2rem;
+    }
+    .menu-show{
+        top: 97px !important;
     }
 }
 
 
 
 
+
+
+
+/********************************************************* Layouts For Header ******************************************/
+
+
+@media(max-width: 800px){
+    header {
+        padding: 16px 5rem;
+    }
+    .scrolled-header{
+        padding: 16px 4rem;
+    }
+}
+
+@media(max-width: 700px){
+    header {
+        padding: 16px 3rem;
+    }
+    .scrolled-header{
+        padding: 16px 3rem;
+    }
+}
+
+@media(max-width: 500px){
+    header .logo{
+        width: 180px;
+    }
+    header {
+        padding: 16px 2rem;
+    }
+    .scrolled-header{
+        padding: 16px 2rem;
+    }
+    .scrolled-header .logo{
+        width: 150px;
+    }
+    .scrolled-header .head{
+        padding: 7px 30px;
+    }
+}
+
+
+
+
+
 /********************************************************* Layouts For Footer ******************************************/
+
 
 
 
