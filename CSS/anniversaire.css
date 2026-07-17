@@ -274,8 +274,8 @@ header .button-nav:hover{
 }
 .sec-2 .gallery img{
 	cursor: pointer;
-	width: 1214px;
-	height: 681px;
+	/*width: 1214px;
+	height: 681px;*/
 	overflow: hidden;
 }
 .contactez-nous{
@@ -1018,6 +1018,79 @@ header .button-nav:hover{
     }
     .menu{
         display: flex;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .sec-2 .gallery img{
+	width: 1050px;
+    }
+}
+
+@media(max-width: 1100px){
+    .sec-2 .gallery img{
+	width: 950px;
+    }
+}
+
+@media(max-width: 1000px){
+    .sec-2 .gallery img{
+	width: 900px;
+    }
+    .section-3 .all-containers{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 900px){
+    .sec-2 .gallery img{
+	width: 800px;
+    }
+}
+
+@media(max-width: 800px){
+    .sec-2 .gallery img{
+	width: 700px;
+    }
+    .section-3{
+	padding: 4rem 5rem;
+    }
+}
+
+@media(max-width: 700px){
+    .sec-2 .gallery img{
+	width: 600px;
+    }
+    .section-3{
+	padding: 4rem 1rem;
+    }
+}
+
+@media(max-width: 600px){
+    .sec-2 .gallery img{
+	width: 500px;
+    }
+    .section-3 .all-containers{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    .sec-2 .gallery img{
+	width: 460px;
+    }
+    .section-3 h1{
+	font-size: 55px;
+    }
+    .section-3 .p{
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .section-3 h1::after{
+        left: 38%;
     }
 }
 
