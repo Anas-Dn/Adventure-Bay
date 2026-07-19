@@ -753,7 +753,7 @@ header .button-nav:hover{
 
 
 @media(max-width: 1200px){
-    header .head .menu-header{
+    header .head .menu-header{ 
         display: block !important;
     }
     header .head ul{
@@ -780,6 +780,21 @@ header .button-nav:hover{
     }
     .menu{
         display: flex;
+    }
+    .section-2{
+	margin: 5rem 4rem;
+    }
+}
+
+@media(max-width: 1000px){
+    .section-2 .container .img{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+    .section-2{
+	margin: 2rem 1rem;
     }
 }
 

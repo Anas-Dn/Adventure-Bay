@@ -521,7 +521,8 @@ header .button-nav:hover{
     color: var(--color-bg-green);
     margin-right: 8px;
 }
-.section-5 .mid .desc button{
+.section-5 .mid .desc a{
+    display: inline-block;
     cursor: pointer;
     margin-top: 20px;
     padding: 11px 28px;
@@ -532,7 +533,7 @@ header .button-nav:hover{
     font-size: 17px;
     font-weight: 600;
 }
-.section-5 .mid .desc button:hover{
+.section-5 .mid .desc a:hover{
     background-color: var(--color-primary-dark);
 }
 .section-5 .mid .all-pics{

@@ -175,3 +175,12 @@ close_header.addEventListener("click" , () => {
     }
 })
 
+
+// scroll behavior for footer
+
+document.getElementById("button-nav").addEventListener("click", (e) => {
+    document.getElementById("footer").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});

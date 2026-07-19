@@ -797,6 +797,13 @@ header .button-nav:hover{
 
 
 
+@media(max-width: 1400px){
+    .jeu{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+    }
+}
+
 @media(max-width: 1200px){
     header .head .menu-header{
         display: block !important;
@@ -828,10 +835,41 @@ header .button-nav:hover{
     }
 }
 
+@media(max-width: 1100px){
+    .jeu{
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 800px){
+    .sec-2{
+    margin: 3rem 2rem;
+    }
+    .sec-2 .head {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .jeu{
+    margin-top: 40px;
+    }
+}
+
+@media(max-width: 700px){
+    .jeu{
+    grid-template-columns: repeat(1,1fr);
+    }
+    .sec-2{
+    margin: 3rem 1rem;
+    }
+}
+
 
 @media(max-width: 500px){
     .menu-show{
         top: 97px !important;
+    }
+    .sec-2{
+    margin: 3rem 0.5rem;
     }
 }
 
@@ -843,7 +881,7 @@ header .button-nav:hover{
 
 @media(max-width: 800px){
     header {
-        padding: 16px 5rem;
+        padding: 16px 5rem; 
     }
     .scrolled-header{
         padding: 16px 4rem;
