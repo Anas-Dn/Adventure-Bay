@@ -253,6 +253,7 @@ header .button-nav:hover{
 
 .sec-2{
     margin: 3rem 5rem;
+    position: relative;
 }
 .sec-2 .head {
     display: flex;
@@ -295,6 +296,7 @@ header .button-nav:hover{
     cursor: pointer;
     padding: 12px 14px;
     border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .sec-2 .head .jeu-name .name p{
     font-size: 18px;
@@ -318,7 +320,9 @@ header .button-nav:hover{
 }
 
 
-/***** jeu card ******/
+/********************* jeu card *********************/
+
+
 
 .jeu{
     margin-top: 90px;
@@ -432,9 +436,136 @@ header .button-nav:hover{
 
 
 
+/********************* Single Page jeu card *********************/
 
 
 
+
+.overlayyyyye {
+    position: fixed;
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 999999;
+}
+.product img{
+    background-position: center;
+    background-size: cover;
+    width: 330px;
+    height: 500px;
+    display: block;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+#overlayyyyye .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    display: flex;
+    border-radius: 20px;
+}
+#overlayyyyye .product .content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    padding: 40px 40px;
+}
+#overlayyyyye .product .content .category{
+    background-color: #c4dae7;
+    color: var(--color-primary);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+}
+#overlayyyyye .product .content h1{
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 35px;
+}
+#overlayyyyye .product .content p{
+    margin-top: 25px;
+    line-height: 1.7;
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 40px;
+}
+#overlayyyyye .product .content .hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+#overlayyyyye .product .content button{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background-color: var(--color-primary);
+    border-radius: 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+}
+#overlayyyyye .product .content button:hover{
+    background-color: var(--color-primary-dark);
+}
+#overlayyyyye .product .content .icon{
+    position: absolute;
+    background-color: #ccc;
+    width: fit-content;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 20px;
+    right: 24px;
+    
+}
+#overlayyyyye .product .content i{
+    color: rgba(0, 0, 0, 0.652);
+    padding: 8px 14px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 800px){
+    #overlayyyyye .product .content .icon{
+        display: none;
+    }
+    #overlayyyyye .product {
+        flex-direction: column;
+        position: static;
+        align-items: center;
+        transform: translate(0%,0%);
+    }
+    .product img{
+        width: 70vw;
+        height: 200px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 30px;
+    }
+    #overlayyyyye .product .content{
+        width: 70vw;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 30px;
+        height: 400px;
+        padding: 20px;
+    }
+    #overlayyyyye .product .content p{
+        margin-top: 20px;
+        line-height: 1.3;
+    }
+}  
 
 
 

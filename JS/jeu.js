@@ -31,16 +31,18 @@ document.getElementById("top").addEventListener("click" ,() => {
 //jeu
 
 const jeuxHT = document.getElementById("jeu");
+const jeu_cards = document.querySelectorAll(".jeu-card");
 
 fetch("../Data/jeux.json")
 .then((response) => response.json())
 .then((jeux) => {
 
-    jeux.forEach((jeu) => {
+    jeux.forEach((jeu , index) => {
 
       jeuxHT.innerHTML += `
       
-        <div class="jeu-card" data-category="${jeu.category}">
+        <div class="jeu-card" data-category="${jeu.category}" data-index="${index}">
+
           <div class="image">
             <img class="img" src="${jeu.image}" alt="${jeu.name}" loading="lazy">
             <span class="category"> ${jeu.category} </span>
@@ -61,8 +63,49 @@ fetch("../Data/jeux.json")
           </div>
 
         </div>
+
       `;
     });
+
+    // single product 
+
+
+    document.querySelectorAll(".jeu-card").forEach((card) => card.addEventListener("click" , () => {
+        const jeu = jeux[card.dataset.index]
+        document.getElementById("overlayyyyye").classList.add("overlayyyyye")
+        console.log(jeu)
+        document.getElementById("product").innerHTML += `
+            <div class="img">
+                <img src="${jeu.image}" alt="">
+            </div>
+            <div class="content">
+                <span class="category"> ${jeu.category} </span>
+                <h1>${jeu.name}</h1>
+                <p>${jeu.desc}</p>
+                <hr class="hr"/>
+                <button id="closes-btns">Fermer</button>
+                <div class="icon">
+                    <i id="closeeeeee" class="fa-solid fa-xmark"></i>
+                </div>
+                
+            </div>
+        `
+        document.querySelectorAll("#closes-btns").forEach((btn) => {
+          btn.addEventListener("click", () => {
+          document.getElementById("product").innerHTML = "";
+          document.getElementById("overlayyyyye").classList.remove("overlayyyyye")
+          })
+        })
+        document.querySelectorAll("#closeeeeee").forEach((btn) => {
+          btn.addEventListener("click", () => {
+          document.getElementById("product").innerHTML = "";
+          document.getElementById("overlayyyyye").classList.remove("overlayyyyye")
+          })
+        })
+       }))
+
+       
+
 
     // search bar
 

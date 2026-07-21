@@ -4,7 +4,8 @@
     "name": "Opération G.H.O.S.t",
     "category": "Jeux de Tir",
     "description": "Jeu de tir tactique avec lumineux",
-    "image": "../assets-jeu/jeu1.jpg"
+    "image": "../assets-jeu/jeu1.jpg",
+    "desc": "Opération G.H.O.S.T. est un jeu de tir arcade tactique immersif doté de contrôleurs de pistolet lumineux réalistes. Combattez à travers diverses missions avec des graphismes époustouflants et un gameplay intense. Parfait pour les joueurs qui aiment les expériences de tir militaire remplies d'action."
   },
 
   {
@@ -12,7 +13,8 @@
     "name": "Champion DE Box",
     "category": "Jeux de Sport",
     "description": "Testez Votre Force De Frappe Sur Cette Machine De Boxe Classique",
-    "image": "../assets-jeu/jeu2.jpg"
+    "image": "../assets-jeu/jeu2.jpg",
+    "desc": "Champion de Boxe est un jeu de test de force où les joueurs frappent le coussin pour obtenir le meilleur score. Dispose de modes solo et multijoueur avec des réglages de puissance et de réflexes. Idéal pour les jeux compétitifs et les fêtes."
   },
 
   {
@@ -20,7 +22,8 @@
     "name": "Course De Voitures Rapides",
     "category": "Jeux de Course",
     "description": "Simulateurs De Course Doubles Avec Volants",
-    "image": "../assets-jeu/jeu3.jpg"
+    "image": "../assets-jeu/jeu3.jpg",
+    "desc": "Course de Voitures Rapides propose deux cabines de course côte à côte en rouge et bleu vibrants. Affrontez vos amis ou des adversaires IA avec des commandes de volant réactives et un gameplay de course immersif. Parfait pour la compétition en tête-à-tête."
   },
 
   {
@@ -28,22 +31,25 @@
     "name": "Expérience Cinéma VR",
     "category": "Expérience VR",
     "description": "Interactive shooting game.",
-    "image": "../assets-jeu/jeu4.jpg"
+    "image": "../assets-jeu/jeu4.jpg",
+    "desc": "Découvrez le futur du divertissement avec ce simulateur de mouvement VR à 6 sièges. Dispose de mouvements synchronisés avec un contenu de réalité virtuelle époustouflant. Choisissez parmi plusieurs expériences VR incluant montagnes russes, aventures spatiales et bien plus encore."
   },
   {
     "id": 5,
-    "name": "Basket Challenge",
-    "category": "Jeux de sport",
-    "description": "Test your basketball skills.",
-    "image": "../assets-jeu/jeu5.jpg"
+    "name": "Course MotoGP",
+    "category": "Jeux de Course",
+    "description": "Simulateur de course de moto authentique",
+    "image": "../assets-jeu/jeu5.jpg",
+    "desc": "Course MotoGP offre une expérience de course de moto authentique avec des commandes de moto réalistes et des graphismes haute définition. Proposant des circuits et des motos MotoGP officiels, les joueurs se penchent dans les virages et rivalisent pour les meilleurs temps au tour. Les accents LED verts et rouges vibrants améliorent l'atmosphère de course."
   },
 
   {
     "id": 6,
-    "name": "Laser Shot",
-    "category": "Jeux de tir",
-    "description": "Interactive shooting game.",
-    "image": "../assets-jeu/jeu6.jpg"
+    "name": "Bowling Magique",
+    "category": "Jeux de Sport",
+    "description": "Mini jeu de bowling avec tickets",
+    "image": "../assets-jeu/jeu6.jpg",
+    "desc": "Bowling Magique apporte l'expérience du bowling en format arcade. Lancez la balle pour renverser les quilles et marquer des points. Dispose d'un éclairage LED lumineux, de plusieurs tours et de tickets à gagner. Idéal pour tous les niveaux."
   },
 
   {
@@ -51,14 +57,17 @@
     "name": "Laser Shot",
     "category": "Jeux de tir",
     "description": "Interactive shooting game.",
-    "image": "../assets-jeu/jeu7.jpg"
+    "image": "../assets-jeu/jeu7.jpg",
+    "desc": "Jeux de Tir est un jeu de galerie de tir multijoueur avec des cibles colorées et un score compétitif. Jusqu'à 4 joueurs peuvent s'affronter simultanément pour toucher des cibles et obtenir le meilleur score. Dispose de graphismes engageants et de divers modes de jeu."
   },
 
   {
     "id": 8,
-    "name": "Laser Shot",
-    "category": "Jeux de tir",
-    "description": "Interactive shooting game.",
-    "image": "../assets-jeu/jeu8.jpg"
+    "name": "Guerrier VR",
+    "category": "Expérience VR",
+    "description": "Expérience VR debout avec contrôles de mouvement",
+    "image": "../assets-jeu/jeu8.jpg",
+    "desc": "Guerrier VR offre une expérience de réalité virtuelle debout immersive. Équipé d'un casque VR et de contrôleurs de mouvement, les joueurs peuvent s'engager dans diverses aventures VR. Dispose d'un design futuriste avec des accents LED."
+    
   }
 ]
