@@ -184,3 +184,76 @@ document.getElementById("button-nav").addEventListener("click", (e) => {
         block: "start"
     });
 });
+
+
+///////////////.  Animation   .////////////////  
+
+
+
+//sec2
+gsap.from(".section-2-h1 , .section-2-h4" , {
+  y:40,
+  opacity:0,
+  duration:1.1,
+  stagger:0.3,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".section-2-h1 , .section-2-h4",
+    start:"top center",
+  }
+});
+
+
+gsap.from(".left-one , .middle-one , .right-one" , {
+  y:70,
+  opacity:0,
+  duration:1.2,
+  stagger:0.3,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".left-one , .middle-one , .right-one",
+    start:"top center",
+  }
+})
+
+
+
+//sec3
+gsap.from(".h1 , .ram-ar , .sec-3-p" , {
+  y:40,
+  opacity:0,
+  duration:1.1,
+  stagger:0.3,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".h1 , .ram-ar , .sec-3-p",
+    start:"top center",
+  }
+})
+
+
+gsap.from(".sec-3-img" , {
+  x: -80,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".sec-3-img",
+    start:"top center",
+  }
+})
+gsap.from(".col-2" , {
+  x: 80,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".col-2",
+    start:"top center",
+  }
+})
+
+
+
+
+//sec4
