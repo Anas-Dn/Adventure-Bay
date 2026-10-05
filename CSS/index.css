@@ -16,7 +16,7 @@
  		
  		--color-bg-purple: #5e35b1;
  		
- 		--color-bg-red: #e91e63;
+ 		--color-bg-red: #e91e63; 
  		
  		--color-ui-red: #e53935;
  		
@@ -44,6 +44,10 @@ a{
 
 li{
     list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -263,9 +267,8 @@ header .button-nav:hover{
 
 .hero-section .bottom-hero{
     position: absolute;
-    top: 84%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
     background-color: var(--color-primary);
     width: 100%;
     display: flex;

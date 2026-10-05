@@ -219,14 +219,14 @@ gsap.from(".left-one , .middle-one , .right-one" , {
 
 
 //sec3
-gsap.from(".h1 , .ram-ar , .sec-3-p" , {
+gsap.from(".section-3 .h1 , .ram-ar , .sec-3-p" , {
   y:40,
   opacity:0,
   duration:1.1,
   stagger:0.3,
   ease: "power3.out",
   scrollTrigger:{
-    trigger:".h1 , .ram-ar , .sec-3-p",
+    trigger:".section-3 .h1 , .ram-ar , .sec-3-p",
     start:"top center",
   }
 })
@@ -242,7 +242,7 @@ gsap.from(".sec-3-img" , {
     start:"top center",
   }
 })
-gsap.from(".col-2" , {
+gsap.from(".sec-3 .col-2" , {
   x: 80,
   opacity:0,
   duration:1.1,
@@ -256,4 +256,169 @@ gsap.from(".col-2" , {
 
 
 
-//sec4
+//sec 4
+
+gsap.from(".sec-4-h1" , {
+  y:40,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".sec-4-h1",
+    start:"top center",
+  }
+})
+
+gsap.from(".con-1" , {
+  x:-60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".con-1",
+    start:"top center",
+  }
+})
+
+gsap.from(".con-2" , {
+  x:60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".con-2",
+    start:"top center",
+  }
+})
+
+
+
+
+
+//sec5
+
+
+gsap.from(".sec-5 .h1" , {
+  y:-50,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".sec-5 .h1",
+    start:"top center",
+  }
+})
+gsap.from(".p-5" , {
+  y:-50,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".p-5",
+    start:"top center",
+  }
+})
+gsap.from(" .butt" , {
+  y:-50,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".butt",
+    start:"top bottom",
+  }
+})
+
+gsap.from(".first-vid , .second-vid , .third-vid" , {
+  y:70,
+  opacity:0,
+  duration:1.2,
+  stagger:0.3,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".first-vid , .second-vid , .third-vid",
+    start:"top center",
+  }
+})
+
+
+
+
+// sec6
+
+
+gsap.from(".pics" , {
+  x:-60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".pics",
+    start:"top center",
+  }
+})
+
+gsap.from(".side-2" , {
+  x:60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".side-2",
+    start:"top center",
+  }
+})
+
+
+
+
+
+
+// animation for footer 
+
+gsap.from(".footer-top .h2", {
+  x:60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".footer-top .h2",
+    start:"top center",
+  }
+})
+
+gsap.from(".footer-top .h4", {
+  x:60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".footer-top .h4",
+    start:"top center",
+  }
+})
+
+
+gsap.from(".footer-map" , {
+  y:-60,
+  opacity:0,
+  ease:"power3.out",
+  duration: 1.2,
+  scrollTrigger:{
+    trigger:".footer-map",
+    start:"top center"
+  }
+})
+
+
+gsap.from(".footer-info .col-1 , .footer-info .col-2 , .footer-info .col-3" , {
+  y: -70,
+  opacity:0,
+  duration:1.2,
+  stagger:0.3,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".footer",
+    start:"end end",
+  }
+})

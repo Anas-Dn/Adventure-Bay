@@ -105,3 +105,70 @@ document.getElementById("button-nav").addEventListener("click", (e) => {
         block: "start"
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// animation for footer 
+
+gsap.from(".footer-top .h2", {
+  x:60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".footer-top .h2",
+    start:"top center",
+  }
+})
+
+gsap.from(".footer-top .h4", {
+  x:60,
+  opacity:0,
+  duration:1.1,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".footer-top .h4",
+    start:"top center",
+  }
+})
+
+
+gsap.from(".footer-map" , {
+  y:-60,
+  opacity:0,
+  ease:"power3.out",
+  duration: 1.2,
+  scrollTrigger:{
+    trigger:".footer-map",
+    start:"top center"
+  }
+})
+
+
+gsap.from(".footer-info .col-1 , .footer-info .col-2 , .footer-info .col-3" , {
+  y: -70,
+  opacity:0,
+  duration:1.2,
+  stagger:0.3,
+  ease: "power3.out",
+  scrollTrigger:{
+    trigger:".footer",
+    start:"end end",
+  }
+})
