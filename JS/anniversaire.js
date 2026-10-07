@@ -115,7 +115,17 @@ document.getElementById("button-nav").addEventListener("click", (e) => {
 
 
 
+// animation
 
+// hero
+
+gsap.from(".hero-h1 , .hero-h3" , {
+  y:-50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  stagger:0.6,
+})
 
 
 

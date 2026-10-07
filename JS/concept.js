@@ -100,12 +100,206 @@ document.getElementById("button-nav").addEventListener("click", (e) => {
 
 
 
+// animation
+
+// hero
+
+gsap.from(".hero-h1 , .hero-h3" , {
+  y:-50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  stagger:0.6,
+})
+
+
+//sec 2
+
+gsap.from(".sec-2 .fir-h1" , {
+  opacity:0,
+  y:-60,
+  ease:"power3.out",
+  duration:1.5,
+  scrollTrigger:{
+    trigger:".sec-2 .fir-h1",
+    start:"top center",
+  }
+})
+
+gsap.from(".sec-2container .col-1" , {
+  x:-80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".sec-2container .col-1",
+    start:"top center",
+  }
+})
+
+gsap.from(".sec-2container .col-2" , {
+  x:80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".sec-2container .col-2",
+    start:"top center",
+  }
+})
 
 
 
 
 
+//sec 3
 
+gsap.from(".section-3 .fir-h1" , {
+  opacity:0,
+  y:-60,
+  ease:"power3.out",
+  duration:1.5,
+  scrollTrigger:{
+    trigger:".section-3 .fir-h1",
+    start:"top center",
+  }
+})
+
+gsap.from(".section-3 .mid .img" , {
+  x:-80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".section-3 .mid",
+    start:"top center",
+  }
+})
+
+gsap.from(".section-3 .mid .desc" , {
+  x:80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".section-3 .mid",
+    start:"top center",
+  }
+})
+
+gsap.from(".sq1 , .sq2 , .sq3 , .sq4 " , {
+  y:-60,
+  opacity:0,
+  duration:1.3,
+  ease:"power4.out",
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".section-3 .last-squares",
+    start:"top center"
+  }
+})
+
+
+
+
+//sec 4
+
+gsap.from(".section-4 .fir-h1" , {
+  opacity:0,
+  y:-60,
+  ease:"power3.out",
+  duration:1.5,
+  scrollTrigger:{
+    trigger:".section-4 .fir-h1",
+    start:"top center",
+  }
+})
+
+gsap.from(".section-4 .mid .img" , {
+  x:80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".section-4 .mid .img",
+    start:"top center",
+  }
+})
+
+gsap.from(".section-4 .mid .desc" , {
+  x:-80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".section-4 .mid .desc",
+    start:"top center",
+  }
+})
+
+gsap.from(".sq5 , .sq6 , .sq7 , .sq8" , {
+  y:-60,
+  opacity:0,
+  duration:1.3,
+  ease:"power4.out",
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".section-4 .last-squares",
+    start:"top center"
+  }
+})
+
+
+
+
+
+//sec 5
+
+gsap.from(".section-5 .fir-h1 , .section-5 .h4" , {
+  opacity:0,
+  y:-60,
+  ease:"power3.out",
+  duration:1.5,
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".section-5",
+    start:"top center",
+  }
+})
+
+gsap.from(".section-5 .mid .col" , {
+  x:80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".section-5 .mid ",
+    start:"top center",
+  }
+})
+
+gsap.from(".section-5 .mid .desc" , {
+  x:-80,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".section-5 .mid ",
+    start:"top center",
+  }
+})
+
+gsap.from(".sq9 , .sq10 , .sq11 , .sq12 " , {
+  y:-60,
+  opacity:0,
+  duration:1.3,
+  ease:"power4.out",
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".section-5 .last-squares ",
+    start:"top center"
+  }
+})
 
 
 
