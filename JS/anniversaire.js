@@ -127,6 +127,30 @@ gsap.from(".hero-h1 , .hero-h3" , {
   stagger:0.6,
 })
 
+//section 2
+
+gsap.from(".sec-2 h2" , {
+  y:-50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.6,
+  scrollTrigger:{
+    trigger:".sec-2 h2",
+    start:"top center"
+  }
+})
+
+gsap.from(".gallery" , {
+  y:50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.3,
+  scrollTrigger:{
+    trigger:".gallery",
+    start:"top center ",
+  }
+})
+
 
 
 

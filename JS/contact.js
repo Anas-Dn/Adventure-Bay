@@ -82,6 +82,43 @@ gsap.from(".hero-h1 , .hero-h3" , {
 })
 
 
+// section 2
+
+gsap.from(".section-2 .h1 , .section-2 .p" , {
+  y:-50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  stagger:0.6,
+  scrollTrigger:{
+    trigger:".section-2 .h1 , .section-2 .p",
+    start:"top center"
+  }
+})
+
+gsap.from(".contact-section" , {
+  x:50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".container",
+    start:"top center"
+  }
+})
+
+gsap.from(".img" , {
+  x:-50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".container",
+    start:"top center"
+  }
+})
+
+
 
 
 
