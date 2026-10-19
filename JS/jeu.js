@@ -65,7 +65,20 @@ fetch("../Data/jeux.json")
         </div>
 
       `;
+      
     });
+
+    gsap.from(".jeu-card",{
+    y:-50,
+    opacity:0,
+    ease:"power3.out",
+    stagger:0.3,
+    duration:1.4,
+    scrollTrigger:{
+      trigger:".jeu-card",
+      start:"top center"
+    }
+  })
 
     // single product 
 
@@ -102,6 +115,8 @@ fetch("../Data/jeux.json")
           document.getElementById("overlayyyyye").classList.remove("overlayyyyye")
           })
         })
+
+
        }))
 
        
@@ -216,6 +231,31 @@ gsap.from(".hero-h1 , .hero-h3" , {
   duration:1.4,
   stagger:0.6,
 })
+
+// sec 2
+
+gsap.from(".input",{
+  x:-50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".input",
+    start:"top center"
+  }
+})
+gsap.from(".jeu-name",{
+  x:50,
+  opacity:0,
+  ease:"power3.out",
+  duration:1.4,
+  scrollTrigger:{
+    trigger:".jeu-name",
+    start:"top center"
+  }
+})
+
+
 
 
 

@@ -38,6 +38,10 @@
     font-family: "Amatic SC","cursive",sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }
