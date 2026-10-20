@@ -1,6 +1,8 @@
 lucide.createIcons();
 
 
+
+// section 1 ///////////
 const video = document.getElementById("bgVideo");
 video.playbackRate = 0.7;
 
@@ -129,23 +131,27 @@ sec5_pause3.addEventListener("click" , () => {
 })
 
 
+
+
 //loader
 
-const navType = performance.getEntriesByType("navigation")[0].type;
 
 window.addEventListener("load", () => {
+
   const loader = document.querySelector(".loader");
   if(  performance.navigation.type === 1 || !sessionStorage.getItem("loaderShown")){
-      loader.style.display = "fle";////////
-      sessionStorage.setItem("loaderShown", "tru");/////////
+      loader.style.display = "flex";
+      sessionStorage.setItem("loaderShown", "true");
 
       setTimeout(() => {
         loader.style.display = "none";
       }, 2000);
     }else{
-      loader.style.display = "non";////////////
+      loader.style.display = "none";
     }
+
 });
+
 
 
 
